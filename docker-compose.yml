@@ -1,0 +1,31 @@
+version: '3'
+name: budget-buddy
+services:
+  budget-buddy-frontend:
+    build:
+      context: ./BudgetBuddy_frontend
+      dockerfile: docker/Dockerfile
+    image: budget-buddy-frontend
+    ports:
+      - "3000:3000"
+  budget-buddy-backend:
+    build:
+      context: ./BudgetBuddy_backend
+      dockerfile: docker/Dockerfile
+    image: budget-buddy-backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 10s
+      timeout: 20s
+      retries: 5
