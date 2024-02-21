@@ -1,0 +1,6 @@
+[submodule "BudgetBuddy_backend"]
+	path = BudgetBuddy_backend
+	url = https://github.com/BudgetBuddy-app/BudgetBuddy_backend
+[submodule "BudgetBuddy_frontend"]
+	path = BudgetBuddy_frontend
+	url = https://github.com/BudgetBuddy-app/BudgetBuddy_frontend
