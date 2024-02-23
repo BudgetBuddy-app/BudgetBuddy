@@ -3,7 +3,7 @@ BudgetBuddy Documentation
 
 Welcome to the Budget Manager app "Budget Buddy"! I am Diogo Ferreira, and this app was designed with my personal needs in mind so there are features that you might not use, and some that might be missing, but I am currently working on adding more. for more info you can contact me at:
 [Github](https://www.github.com/diogo-febra-ferreira/) or 
-[Linkedin](https://www.linkedin.com/in/diogo-febra-ferreira/)
+[Linkedin](https://www.linkedin.com/in/diogo-febra-ferreira/).
 
 Transactions
 ============
@@ -74,7 +74,7 @@ the frontend one contains:
 How to run
 ==========
 
-There are 2 ways of running the project, development mode, and production(docker) mode: Production mode is for everyday use, and only needs a working docker installation, and the filling of the frontend and backend **.env** files as instructed in the respective chapter of the documentation. After which, one only need to run the **docker-compose up** command on a terminal in the root directory. Development mode is run with the script **run\_dev\_environment.cmd** on Windows as an administrator, and uses a local installation of SQL (even though with some tweaking to the script, it can be ran using a docker one) and runs the frontend in development mode, allowing hot reloads for simplified development. It also installs all dependencies directly into the folder which might cause compatibility problems depending on your operating system, as the app was developed using Windows 10, this is the recommended environment.
+There are 2 ways of running the project, development mode, and production(docker) mode: Production mode is for everyday use, and only needs a working docker installation, and the filling of the frontend and backend **.env** files as instructed in the respective chapter of the documentation. After which, one only need to run the **docker-compose up** command on a terminal in the root directory. Development mode is run with the script **run\_dev\_environment.cmd** on Windows as an administrator, and uses a local installation of SQL (even though with some tweaking to the script, it can be ran using a docker one) and runs the frontend in development mode, allowing hot reloads for simplified development. **Node (npm)** must also be installed, as it also installs all dependencies directly into the folder which might cause compatibility problems depending on your operating system, as the app was developed using Windows 10, this is the recommended environment. The script uses **nvm** to make sure that the node version is the correct one used during development, so this should be installed too, unless you only have the correct version installed, in which case you only need to comment that line
 
 Development
 ===========
